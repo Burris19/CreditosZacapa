@@ -5,7 +5,7 @@
         <small>listado</small>
     </h1>
     <ol class="breadcrumb" style="">
-        <button data-root = 'cars' class="btn btn-block btn-primary btn-sm create">Crear registro</button>
+        <a href="#modal-create" class="btn btn-block btn-primary btn-sm create" data-toggle="modal">Crear Registro</a>
     </ol>
 @endsection
 
@@ -37,6 +37,8 @@
     </div>
 @endsection
 
+@include('admin.branch.create')
+<div id="div-modal"></div>
 @section('other-scripts')
     {!! Html::script('plugins/datatables/jquery.dataTables.min.js') !!}
     {!! Html::script('plugins/datatables/dataTables.bootstrap.min.js') !!}
