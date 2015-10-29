@@ -20,19 +20,13 @@
 //Route::get('register', 'Auth\AuthController@getRegister');
 //Route::post('register', 'Auth\AuthController@postRegister');
 
-Route::group(['prefix' => '/', 'middleware' => 'auth'], function() {
+Route::group(['prefix' => '/', 'namespace' => 'Admin','middleware' => 'auth'], function() {
     Route::get('', [
         'as' => 'home', function() {
-            return 'hola';
+            return redirect()->to('branches');
         }
     ]);
-
-});
-
-
-Route::group(['prefix' => 'admin','namespace' => 'Admin'], function () {
-    Route::resource('usuarios', 'UserController');
-
+    Route::resource('branches','BranchController');
 });
 
 Route::controllers([
