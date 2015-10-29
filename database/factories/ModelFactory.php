@@ -11,7 +11,7 @@
 |
 */
 
-$factory->define(App\User::class, function (Faker\Generator $faker) {
+$factory->define(App\Repositories\User\User::class, function (Faker\Generator $faker) {
     return [
         'name' => 'admin',
         'email' => 'admin@gmail.com',
