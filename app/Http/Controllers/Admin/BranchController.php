@@ -5,19 +5,17 @@ namespace App\Http\Controllers\Admin;
 use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use App\Repositories\Branch\BranchRepo;
 
 class BranchController extends CRUDController
 {
     protected $module = 'branch';
 
-    function __construct(CityRepo $cityRepo)
+    protected $repo = null;
+
+    function __construct(BranchRepo $branchRepo)
     {
-        $this->repo = $cityRepo;
+        $this->repo = $branchRepo;
     }
 
-    public function getCities($id)
-    {
-        $data = $this->repo->getModel()->where('id_department',$id)->get();
-        return $data->lists('description','id');
-    }
 }

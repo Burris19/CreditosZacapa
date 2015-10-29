@@ -10,7 +10,7 @@ use App\Http\Controllers\Controller;
 class CRUDController extends Controller
 {
     protected $rules = array();
-    protected $repo;
+    protected $repo = null;
     protected $module = '';
     protected $root = 'admin';
 

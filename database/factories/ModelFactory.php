@@ -1,5 +1,7 @@
 <?php
 
+use App\Repositories\Host\Host;
+
 /*
 |--------------------------------------------------------------------------
 | Model Factories
@@ -19,3 +21,22 @@ $factory->define(App\Repositories\User\User::class, function (Faker\Generator $f
         'remember_token' => str_random(10),
     ];
 });
+
+$factory->define(App\Repositories\Host\Host::class, function (Faker\Generator $faker) {
+    return [
+        'codigo' => 'A25',
+        'nombre' => 'Servidor Central',
+        'direccion' => 'Guatemala,Guatemala'
+    ];
+});
+
+$factory->define(App\Repositories\Branch\Branch::class, function (Faker\Generator $faker) {
+    return [
+        'idHost' => App\Repositories\Host\Host::all()->random()->id,
+        'nombre' => $faker->name,
+        'area' => $faker->city,
+        'fecha' => $faker->date()
+    ];
+});
+
+
