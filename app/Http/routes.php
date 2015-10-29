@@ -29,6 +29,12 @@ Route::group(['prefix' => '/', 'middleware' => 'auth'], function() {
 
 });
 
+
+Route::group(['prefix' => 'admin','namespace' => 'Admin'], function () {
+    Route::resource('usuarios', 'UserController');
+
+});
+
 Route::controllers([
     'auth' => 'Authentication\AuthController'
 ]);

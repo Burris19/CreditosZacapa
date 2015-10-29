@@ -1,5 +1,6 @@
 <?php
-namespace App\Repositories\Base\BaseRepo;
+namespace App\Repositories\User;
+use App\Repositories\Base\BaseRepo;
 
 /**
  *

@@ -3,12 +3,23 @@
 namespace App\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
-
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
+
 class CRUDController extends Controller
 {
+    protected $rules = array();
+    protected $repo;
+    protected $module = '';
+    protected $root = 'admin';
+
+
+    function __construct($middleware = 'auth')
+    {
+        //$this->middleware($middleware);
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -16,7 +27,9 @@ class CRUDController extends Controller
      */
     public function index()
     {
-        //
+        $data = $this->repo->getAll();
+        return view($this->root . '/' . $this->module  .'/list',compact('data'));
+
     }
 
     /**
@@ -26,7 +39,7 @@ class CRUDController extends Controller
      */
     public function create()
     {
-        //
+        return view($this->root . '/' . $this->module . '/create');
     }
 
     /**
@@ -37,7 +50,22 @@ class CRUDController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $data =$request->all();
+        $validator = \Validator::make($data, $this->rules);
+        $success = true;
+        $message = "Registro guardado exitosamente";
+        $record = null;
+        if ($validator->passes())
+        {
+            $record = $this->repo->create($data);
+            return compact('success','message','record','data');
+        }
+        else
+        {
+            $success=false;
+            $message = $validator->messages();
+            return compact('success','message','record','data');
+        }
     }
 
     /**
@@ -48,7 +76,7 @@ class CRUDController extends Controller
      */
     public function show($id)
     {
-        //
+
     }
 
     /**
