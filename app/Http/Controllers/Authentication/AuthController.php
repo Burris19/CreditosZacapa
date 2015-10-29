@@ -1,12 +1,14 @@
 <?php
 
-namespace App\Http\Controllers\Auth;
+namespace App\Http\Controllers\Authentication;
 
+use App\Http\Requests\Request;
 use App\User;
 use Validator;
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\ThrottlesLogins;
 use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
+
 
 class AuthController extends Controller
 {
@@ -62,4 +64,16 @@ class AuthController extends Controller
             'password' => bcrypt($data['password']),
         ]);
     }
+    /*
+     * Overrides methods
+     */
+
+    public function getLogin()
+    {
+        return view('admin.login.layout');
+    }
+
+
+
+
 }
