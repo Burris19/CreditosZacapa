@@ -7,9 +7,11 @@ use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use App\Repositories\Branch\BranchRepo;
 
+
 class BranchController extends CRUDController
 {
     protected $module = 'branch';
+
 
     protected $repo = null;
 

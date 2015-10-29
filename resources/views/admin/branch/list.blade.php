@@ -21,14 +21,24 @@
                         <thead>
                         <tr>
                             <th>#</th>
-                            <th>Codigo</th>
+                            <th>Nombre</th>
+                            <th>Area</th>
+                            <th>Fecha</th>
+                            <th></th>
+                            <th></th>
                         </tr>
                         </thead>
                         <tbody>
+                          @foreach($data as  $key => $branch)
                             <tr>
-                                <td>hola</td>
-                                <td>hola</td>
+                                <td>{{ $key + 1   }}</td>
+                                <td>{{ $branch->nombre }} </td>
+                                <td>{{ $branch->area }} </td>
+                                <td>{{ $branch->fecha }} </td>
+                              <td><a class="btn btn-info glyphicon glyphicon-pencil"></a></td>
+                              <td><a class="btn btn-danger glyphicon glyphicon-remove" ></a></td>
                             </tr>
+                        @endforeach
                         </tbody>
                     </table>
                 </div>
@@ -47,4 +57,3 @@
         });
     </script>
 @endsection
-
