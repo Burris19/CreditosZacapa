@@ -74,10 +74,19 @@ class CRUDController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Request $request, $id)
     {
+        $action = $request->only('action');
         $data = $this->repo->findOrFail($id);
-        return view($this->root .'/'.$this->module . '/edit',compact('data'));
+        if($action['action']=='delete')
+        {
+            return view($this->root . '/' . $this->module . '/delete',compact('data'));
+        }
+        else if ($action['action']=='edit')        {
+
+            return view($this->root . '/' . $this->module .'/edit',compact('data'));
+        }
+
     }
 
     /**
@@ -130,6 +139,13 @@ class CRUDController extends Controller
      */
     public function destroy($id)
     {
-        //
+        if($this->repo->delete($id))
+        {
+            return ['success'=>'true','message'=>'Registro eliminado exitosamente'];
+        }
+        else
+        {
+            return ['success'=>'false','message'=>'Ocurrio un error al intentar ser eliminado'];
+        }
     }
 }
