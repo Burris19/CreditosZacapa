@@ -12,6 +12,6 @@ class BranchTableSeeder extends Seeder
     public function run()
     {
 
-        factory(App\Repositories\Branch\Branch::class, 100000)->create();
+        factory(App\Repositories\Branch\Branch::class, 5)->create();
     }
 }
