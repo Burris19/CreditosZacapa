@@ -39,4 +39,16 @@ $factory->define(App\Repositories\Branch\Branch::class, function (Faker\Generato
     ];
 });
 
-
+$factory->define(App\Repositories\Cliente\Cliente::class, function (Faker\Generator $faker) {
+    return [
+        'codigo' => $faker->code,
+        'dpi' => $faker->code,
+        'nit' => $faker->code,
+        'nombre' => $faker->name,
+        'apellido' => $faker->name,
+        'direccion' => $faker->city,
+        'telefono' => $faker->code,
+        'edad' => $faker->code,
+        'fecha' => $faker->date()
+    ];
+});
