@@ -48,7 +48,7 @@
             <div class="form-group">
                 <label for="fecha" class="col-sm-2 control-label">Direccion</label>
                 <div class="col-sm-10">
-                    {!! Form::text('nit',$data->direccion,['class' => 'form-control', 'placeholder' => 'Direccion del Cliente', 'required']) !!}
+                    {!! Form::text('direccion',$data->direccion,['class' => 'form-control', 'placeholder' => 'Direccion del Cliente', 'required']) !!}
                 </div>
             </div>
             <div class="form-group">
