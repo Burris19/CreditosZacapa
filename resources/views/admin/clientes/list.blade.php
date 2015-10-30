@@ -45,7 +45,7 @@
                                 <td>{{ $cliente->direccion }} </td>
                                 <td>{{ $cliente->telefono }} </td>
                                 <td>{{ $cliente->edad }} </td>
-                              
+
                               <td><a class="btn btn-info glyphicon glyphicon-pencil"></a></td>
                               <td><a class="btn btn-danger glyphicon glyphicon-remove" ></a></td>
                             </tr>
@@ -58,7 +58,7 @@
     </div>
 @endsection
 
-@include('admin.branch.create')
+@include('admin.clientes.create')
 <div id="div-modal"></div>
 @section('other-scripts')
     {!! Html::script('plugins/datatables/jquery.dataTables.min.js') !!}
