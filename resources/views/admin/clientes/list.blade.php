@@ -1,7 +1,7 @@
 @extends('admin._base.home.layout')
 @section('header')
     <h1>
-        Brach
+        Clientes
         <small>listado</small>
     </h1>
     <ol class="breadcrumb" style="">
@@ -14,7 +14,7 @@
         <div class="col-xs-12">
             <div class="box">
                 <div class="box-header">
-                    <h3 class="box-title">Listado de brach</h3>
+                    <h3 class="box-title">Listado de Clientes</h3>
                 </div><!-- /.box-header -->
                 <div class="box-body">
                     <table id="example1" class="table table-bordered table-striped">
@@ -45,9 +45,8 @@
                                 <td>{{ $cliente->direccion }} </td>
                                 <td>{{ $cliente->telefono }} </td>
                                 <td>{{ $cliente->edad }} </td>
-
-                              <td><a class="btn btn-info glyphicon glyphicon-pencil"></a></td>
-                              <td><a class="btn btn-danger glyphicon glyphicon-remove" ></a></td>
+                                <td><a href="#" data-url = "clientes" data-id = "{{ $cliente->id }}"  class="btn btn-info glyphicon glyphicon-pencil edit"></a></td>
+                                <td><a href="#" data-url = "clientes" data-id = "{{ $cliente->id }}"  class="btn btn-danger glyphicon glyphicon-remove delete" ></a></td>
                             </tr>
                         @endforeach
                         </tbody>
