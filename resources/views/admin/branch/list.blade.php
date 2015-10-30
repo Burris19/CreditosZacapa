@@ -43,10 +43,12 @@
     {!! Html::script('plugins/datatables/jquery.dataTables.min.js') !!}
     {!! Html::script('plugins/datatables/dataTables.bootstrap.min.js') !!}
     {!! Html::style('plugins/datatables/dataTables.bootstrap.css') !!}
+    {!! Html::script('js/crudAdmin.js') !!}
     <script>
         $(function () {
             $("#example1").DataTable();
         });
     </script>
+
 @endsection
 

@@ -1,7 +1,7 @@
 @extends('base_modal.modal')
 
 @section('modal-title')
-    Crear Usuario
+    Crear Branch
 @stop
 
 @section('modal-id')
@@ -9,29 +9,34 @@
 @stop
 
 @section('modal-body')
-    {!! Form::open(['url' => 'users','id'=>'form-create','method' => 'POST','class'=>'form-horizontal']) !!}
-
+    <div id="respuesta" class="alert alert-info">
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+        <strong></strong>
+    </div>
+    {!! Form::open(['url' => 'branches','id'=>'form-create','method' => 'POST','class'=>'form-horizontal', 'data-url' => 'branches' ]) !!}
         <div class="box-body">
             <div class="form-group">
-                <label class="col-sm-2 control-label">Nombre</label>
+                <label for="nombre" class="col-sm-2 control-label">Nombre</label>
                 <div class="col-sm-10">
-                    {!! Form::text('nombre',null,['class' => 'form-control', 'placeholder' => 'Nombre del branch']) !!}
+                    {!! Form::text('nombre',null,['class' => 'form-control', 'placeholder' => 'Nombre del branch', 'required']) !!}
                 </div>
             </div>
             <div class="form-group">
-                <label class="col-sm-2 control-label">Area</label>
+                <label for="area" class="col-sm-2 control-label">Area</label>
                 <div class="col-sm-10">
-                    {!! Form::text('area',null,['class' => 'form-control', 'placeholder' => 'Area o region a la que pertenece']) !!}
+                    {!! Form::text('area',null,['class' => 'form-control', 'placeholder' => 'Area o region a la que pertenece', 'required']) !!}
                 </div>
             </div>
             <div class="form-group">
-                <label class="col-sm-2 control-label">Fecha</label>
+                <label for="fecha" class="col-sm-2 control-label">Fecha</label>
                 <div class="col-sm-10">
-                    {!! Form::date('fecha', \Carbon\Carbon::now() ,['class' => 'form-control', 'placeholder' => 'Con esta fecha iniciara el brach']) !!}
+                    {!! Form::date('fecha', \Carbon\Carbon::now() ,['class' => 'form-control', 'placeholder' => 'Con esta fecha iniciara el brach', 'required']) !!}
                 </div>
             </div>
+            <button type="submit" class="hide"></button>
         </div>
     {!! Form::close() !!}
+
 @stop
 
 @section('modal-footer')

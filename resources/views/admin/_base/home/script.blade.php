@@ -21,3 +21,5 @@
 {!! Html::script('dist/js/demo.js') !!}
 {!! Html::script('access/helps.js') !!}
 {!! Html::script('https://cdn.datatables.net/r/dt/dt-1.10.9/datatables.min.js') !!}
+{!! Html::script('plugins/validator/jquery.validate.js') !!}
+
