@@ -35,8 +35,8 @@
                                 <td>{{ $branch->nombre }} </td>
                                 <td>{{ $branch->area }} </td>
                                 <td>{{ $branch->fecha }} </td>
-                              <td><a class="btn btn-info glyphicon glyphicon-pencil"></a></td>
-                              <td><a class="btn btn-danger glyphicon glyphicon-remove" ></a></td>
+                              <td><a href="#" data-url = "branches" data-id = "{{ $branch->id }}"  class="btn btn-info glyphicon glyphicon-pencil edit"></a></td>
+                              <td><a href="#" data-url = "branches" data-id = "{{ $branch->id }}"  class="btn btn-danger glyphicon glyphicon-remove delete" ></a></td>
                             </tr>
                         @endforeach
                         </tbody>

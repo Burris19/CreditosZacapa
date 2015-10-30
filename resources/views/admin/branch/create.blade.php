@@ -9,7 +9,7 @@
 @stop
 
 @section('modal-body')
-    <div id="respuesta" class="alert alert-info">
+    <div class="response" class="alert alert-info">
         <button type="button" class="close" data-dismiss="alert">&times;</button>
         <strong></strong>
     </div>

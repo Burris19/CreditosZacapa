@@ -18,7 +18,6 @@ class BranchController extends CRUDController
 
     protected $module = 'branch';
 
-
     protected $repo = null;
 
     function __construct(BranchRepo $branchRepo)
@@ -29,6 +28,7 @@ class BranchController extends CRUDController
 
     public function store(Request $request)
     {
+
         $data =$request->all();
         $data['idHost'] = 1;
         $validator = \Validator::make($data, $this->rules);

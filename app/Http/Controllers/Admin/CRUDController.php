@@ -76,7 +76,8 @@ class CRUDController extends Controller
      */
     public function show($id)
     {
-
+        $data = $this->repo->findOrFail($id);
+        return view($this->root .'/'.$this->module . '/edit',compact('data'));
     }
 
     /**
@@ -99,7 +100,26 @@ class CRUDController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $record_old = $this->repo->findOrFail($id);
+        $data = $request->all();
+
+//        return compact('record_old','data');
+        $validator = \Validator::make($data, $this->rules);
+        $success = true;
+        $message = "Registro guardado exitosamente";
+        $record = null;
+
+        if ($validator->passes())
+        {
+            $record = $this->repo->update($record_old, $data);
+            return compact('success','message','record');
+        }
+        else
+        {
+            $success=false;
+            $message=$validator->messages();
+            return compact('success','message','record');
+        }
     }
 
     /**

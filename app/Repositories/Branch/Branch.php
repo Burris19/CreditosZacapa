@@ -11,7 +11,7 @@ class Branch extends Model
     protected $fillable = [
         'idHost',
         'nombre',
-        'are',
+        'area',
         'fecha'
     ];
 
