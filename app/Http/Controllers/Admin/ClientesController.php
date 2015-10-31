@@ -6,16 +6,16 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
-use App\Repositories\Cliente\ClienteRepo;
+use App\Repositories\Clientes\ClienteRepo;
 
 class ClientesController extends CRUDController
 {
 
     protected $module='clientes';
 
-    function __construct(ClienteRepo $clienteRepo)
+    function __construct(ClienteRepo $clientesRepo)
     {
-        $this->repo=$clienteRepo;
+        $this->repo=$clientesRepo;
     }
 
 }

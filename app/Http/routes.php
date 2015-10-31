@@ -26,8 +26,11 @@ Route::group(['prefix' => '/', 'namespace' => 'Admin','middleware' => 'auth'], f
             return redirect()->to('branches');
         }
     ]);
+
     Route::resource('branches','BranchController');
+
     Route::resource('clientes','ClientesController');
+
     Route::resource('sucursales','SucursalesController');
 
 });
