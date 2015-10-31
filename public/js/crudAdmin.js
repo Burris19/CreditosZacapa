@@ -1,11 +1,11 @@
 $(function(){
+
     var message = $('.response');
     message.hide();
     $('.create').on('click',function(){
         var route = $(this).data('root');
         $('.content').load( route + '/create');
     });
-
     $('#btn-save').on('click',function(e){
         e.preventDefault();
         $('#btn-save').prop('disabled',true);
@@ -32,9 +32,9 @@ $(function(){
                         message.show();
 
                     }
-                    setTimeout(function(){
-                        window.location.href = url;
-                    },2000)
+                    //setTimeout(function(){
+                    //    window.location.href = url;
+                    //},2000)
                 }
             },
             error: function(xhr,ajaxOptions,thrownError){
@@ -43,7 +43,6 @@ $(function(){
             }
         });
     });
-
     $('.edit').on('click',function(e){
         e.preventDefault();
         id = $(this).data('id');
@@ -88,7 +87,6 @@ $(function(){
             })
         })
     });
-
     $('.delete').on('click',function(e) {
         e.preventDefault();
         id = $(this).data('id');
@@ -132,5 +130,28 @@ $(function(){
             })
         });
     });
+
+
+    /*
+        Funcion calcular cuota mensual
+     */
+    $('.monthlyFee').change(function(){
+        var interesCalculado = 0;
+        var noCuotasCalculado = 0;
+        var cantidad = $('.share').val();
+        var interes = $('.interest').val();
+        var noCuotas = $('.no_share').val();
+
+        if (interes !=0 && noCuotas !=0)
+        {
+            interesCalculado = ( ( cantidad * interes ) / 100 );
+            noCuotasCalculado = ( (cantidad / noCuotas) + interesCalculado);
+            $('.shareFinal').val(noCuotasCalculado.toFixed(2));
+
+        }
+
+
+
+    })
 
 });

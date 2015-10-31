@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateClientesTable extends Migration
+class CreateCreditosTable extends Migration
 {
     /**
      * Run the migrations.
@@ -12,16 +12,13 @@ class CreateClientesTable extends Migration
      */
     public function up()
     {
-        Schema::create('clientes', function (Blueprint $table) {
+        Schema::create('creditos', function (Blueprint $table) {
             $table->increments('id');
             $table->string('codigo');
-            $table->string('dpi');
-            $table->string('nit');
-            $table->string('nombre');
-            $table->string('apellido');
-            $table->string('direccion');
-            $table->integer('telefono');
-            $table->integer('edad');
+            $table->decimal('saldo',8,2);
+
+            $table->integer('idCliente')->unsigned();
+            $table->foreign('idCliente')->references('id')->on('clientes');
 
             $table->timestamps();
         });
@@ -34,6 +31,6 @@ class CreateClientesTable extends Migration
      */
     public function down()
     {
-        Schema::drop('clientes');
+        Schema::drop('creditos');
     }
 }

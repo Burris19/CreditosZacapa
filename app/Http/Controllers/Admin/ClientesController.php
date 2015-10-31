@@ -8,6 +8,7 @@ use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use App\Repositories\Clientes\ClienteRepo;
 
+
 class ClientesController extends CRUDController
 {
 
@@ -17,5 +18,12 @@ class ClientesController extends CRUDController
     {
         $this->repo=$clientesRepo;
     }
+
+    public function store(Request $request)
+    {
+        $data = $request->all();
+        return $data;
+    }
+
 
 }

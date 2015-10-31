@@ -9,10 +9,6 @@
 @stop
 
 @section('modal-body')
-    <div id="respuesta" class="alert alert-info">
-        <button type="button" class="close" data-dismiss="alert">&times;</button>
-        <strong></strong>
-    </div>
     {!! Form::open(['url' => 'clientes','id'=>'form-create','method' => 'POST','class'=>'form-horizontal', 'data-url' => 'clientes' ]) !!}
         <div class="box-body">
 
@@ -79,22 +75,22 @@
               <div class="form-group">
                   <label for="fecha" class="col-sm-2 control-label">Cantidad</label>
                   <div class="col-sm-4">
-                      {!! Form::number('telefono',null,['class' => 'form-control', 'placeholder' => 'Telefono Del Cliente', 'required']) !!}
+                      {!! Form::number('catidad',null,['class' => 'form-control monthlyFee share', 'placeholder' => 'Cantidad credito', 'required']) !!}
                   </div>
                   <label for="fecha" class="col-sm-2 control-label">Interes</label>
                   <div class="col-sm-4">
-                      {!! Form::number('edad',null,['class' => 'form-control', 'placeholder' => 'Edad del Cliente', 'required']) !!}
+                      {!! Form::number('interes',null,['class' => 'form-control monthlyFee interest', 'placeholder' => 'Interes', 'required']) !!}
                   </div>
               </div>
 
               <div class="form-group">
                   <label for="fecha" class="col-sm-2 control-label"># Cuotas</label>
                   <div class="col-sm-4">
-                      {!! Form::number('telefono',null,['class' => 'form-control', 'placeholder' => 'Telefono Del Cliente', 'required']) !!}
+                      {!! Form::number('cuotas',null,['class' => 'form-control monthlyFee no_share', 'placeholder' => 'No de cuotas', 'required']) !!}
                   </div>
                   <label for="fecha" class="col-sm-2 control-label">Cuota Mensual</label>
                   <div class="col-sm-4">
-                      {!! Form::number('edad',null,['class' => 'form-control', 'placeholder' => 'Edad del Cliente', 'required']) !!}
+                      {!! Form::number('cuota',null,['class' => 'form-control shareFinal', 'placeholder' => 'Cuota Mensual', 'required', 'readonly'=>"readonly"  ]) !!}
                   </div>
               </div>
 
