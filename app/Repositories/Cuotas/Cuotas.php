@@ -15,4 +15,6 @@ class Cuotas extends Model
         'estado',
         'balance'
     ];
+
+
 }

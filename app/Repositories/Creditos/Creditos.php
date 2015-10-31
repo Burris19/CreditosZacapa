@@ -11,8 +11,18 @@ class Creditos extends Model
     protected $fillable = [
         'codigo',
         'saldo',
+        'interes',
         'idCliente',
     ];
+
+    public $relations = [
+        'details'
+    ];
+
+    public function details()
+    {
+        return $this->hasMany('App\Repositories\Cuotas\Cuotas', 'idCredito', 'id');
+    }
 
 
 }

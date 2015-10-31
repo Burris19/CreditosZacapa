@@ -27,7 +27,6 @@
                             <th>Nombre</th>
                             <th>Apellido</th>
                             <th></th>
-                            <th></th>
                         </tr>
                         </thead>
                         <tbody>
@@ -39,8 +38,7 @@
                                 <td>{{ $cliente->nit }} </td>
                                 <td>{{ $cliente->nombre }} </td>
                                 <td>{{ $cliente->apellido }} </td>
-                                <td><a href="#" data-url = "clientes" data-id = "{{ $cliente->id }}"  class="btn btn-info glyphicon glyphicon-pencil edit"></a></td>
-                                <td><a href="#" data-url = "clientes" data-id = "{{ $cliente->id }}"  class="btn btn-danger glyphicon glyphicon-remove delete" ></a></td>
+                                <td><a href="#" data-url = "clientes" data-id = "{{ $cliente->id }}"  class="btn btn-info glyphicon glyphicon-th-list edit"></a></td>
                             </tr>
                         @endforeach
                         </tbody>

@@ -47,6 +47,7 @@ class ClientesController extends CRUDController
         $data = $request->all();
         $dataCredit['codigo'] = $data['codigo'];
         $dataCredit['saldo'] = ( $data['cuota'] * $data['noCuotas'] );
+        $dataCredit['interes'] = $data['interes'];
         $validator = \Validator::make($data,$this->rules);
         $fechaPago = Carbon::now();
         $success = true;
@@ -88,5 +89,11 @@ class ClientesController extends CRUDController
 
     }
 
+    public function show(Request $request, $id)
+    {
+        $credit = $this->creditoRepo->findByField('idCliente',$id);
+        $data = $this->creditoRepo->findWithRelations($credit->id);
+        return view($this->root . '/' . $this->module .'/showCuotas',compact('data'));
 
+    }
 }
