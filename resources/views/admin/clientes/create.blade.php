@@ -9,9 +9,12 @@
 @stop
 
 @section('modal-body')
+    <div class="response" class="alert alert-info">
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+        <strong></strong>
+    </div>
     {!! Form::open(['url' => 'clientes','id'=>'form-create','method' => 'POST','class'=>'form-horizontal', 'data-url' => 'clientes' ]) !!}
         <div class="box-body">
-
             <div class="panel panel-warning">
               <div class="panel-heading">
                 <h3 class="panel-title">Datos Del Cliente</h3>
@@ -86,7 +89,7 @@
               <div class="form-group">
                   <label for="fecha" class="col-sm-2 control-label"># Cuotas</label>
                   <div class="col-sm-4">
-                      {!! Form::number('cuotas',null,['class' => 'form-control monthlyFee no_share', 'placeholder' => 'No de cuotas', 'required']) !!}
+                      {!! Form::number('noCuotas',null,['class' => 'form-control monthlyFee no_share', 'placeholder' => 'No de cuotas', 'required']) !!}
                   </div>
                   <label for="fecha" class="col-sm-2 control-label">Cuota Mensual</label>
                   <div class="col-sm-4">

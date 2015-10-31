@@ -32,9 +32,9 @@ $(function(){
                         message.show();
 
                     }
-                    //setTimeout(function(){
-                    //    window.location.href = url;
-                    //},2000)
+                    setTimeout(function(){
+                        window.location.href = url;
+                    },2000)
                 }
             },
             error: function(xhr,ajaxOptions,thrownError){

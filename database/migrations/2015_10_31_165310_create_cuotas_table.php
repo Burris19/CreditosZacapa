@@ -21,7 +21,6 @@ class CreateCuotasTable extends Migration
             $table->decimal('montoCuota',8,2);
             $table->date('fechaPago');
             $table->string('estado');
-            $table->date('fechaVencimiento');
             $table->decimal('balance',8,2);
 
             $table->timestamps();

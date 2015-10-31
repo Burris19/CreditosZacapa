@@ -26,9 +26,6 @@
                             <th>Nit</th>
                             <th>Nombre</th>
                             <th>Apellido</th>
-                            <th>Direccion</th>
-                            <th>Telefono</th>
-                            <th>Edad</th>
                             <th></th>
                             <th></th>
                         </tr>
@@ -42,9 +39,6 @@
                                 <td>{{ $cliente->nit }} </td>
                                 <td>{{ $cliente->nombre }} </td>
                                 <td>{{ $cliente->apellido }} </td>
-                                <td>{{ $cliente->direccion }} </td>
-                                <td>{{ $cliente->telefono }} </td>
-                                <td>{{ $cliente->edad }} </td>
                                 <td><a href="#" data-url = "clientes" data-id = "{{ $cliente->id }}"  class="btn btn-info glyphicon glyphicon-pencil edit"></a></td>
                                 <td><a href="#" data-url = "clientes" data-id = "{{ $cliente->id }}"  class="btn btn-danger glyphicon glyphicon-remove delete" ></a></td>
                             </tr>

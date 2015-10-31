@@ -10,10 +10,9 @@ class Cuotas extends Model
 
     protected $fillable = [
         'idCredito',
-        'montocuota',
+        'montoCuota',
         'fechaPago',
         'estado',
-        'fechaVencimiento',
         'balance'
     ];
 }
