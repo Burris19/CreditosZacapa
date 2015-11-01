@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Repositories\Sucursal;
+namespace App\Repositories\Sucursales;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Sucursal extends Model
+class Sucursales extends Model
 {
     protected $table = 'sucursales';
 
@@ -19,7 +19,7 @@ class Sucursal extends Model
         'branch'
     ];
 
-    public function relations()
+    public function branch()
     {
         return $this->hasOne('App\Repositories\Host\Host', 'id','idHost');
     }

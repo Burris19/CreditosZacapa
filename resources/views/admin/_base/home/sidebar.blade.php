@@ -8,6 +8,9 @@
       <a href="clientes">
         <i class="glyphicon glyphicon-apple"></i> <span>Clientes</span>
       </a>
+      <a href="sucursales">
+        <i class="glyphicon glyphicon-apple"></i> <span>Sucursales</span>
+      </a>
     </li>
   </ul>
 </section>

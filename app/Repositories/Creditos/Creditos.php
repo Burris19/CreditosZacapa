@@ -12,6 +12,7 @@ class Creditos extends Model
         'codigo',
         'saldo',
         'interes',
+        'is_host',
         'idCliente',
     ];
 
