@@ -25,7 +25,16 @@ class SucursalesController extends CRUDController
     {
         $data = $this->repo->getWithRelations();
         return view($this->root . '/' . $this->module  .'/list',compact('data'));
+    }
+
+
+
+    public function show(Request $request, $id)
+    {
+        $data = $this->repo->findWithRelations($id);
+        return view($this->root . '/' . $this->module .'/showCajeros',compact('data'));
 
     }
+
 
 }

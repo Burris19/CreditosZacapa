@@ -16,11 +16,17 @@ class Sucursales extends Model
     ];
 
     public $relations = [
-        'branch'
+        'branch',
+        'cajero'
     ];
 
     public function branch()
     {
         return $this->hasOne('App\Repositories\Host\Host', 'id','idHost');
+    }
+
+    public function cajero()
+    {
+        return $this->hasMany('App\Repositories\Cajeros\Cajero','idSucursal','id');
     }
 }
