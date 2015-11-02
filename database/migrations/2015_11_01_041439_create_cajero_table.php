@@ -18,10 +18,10 @@ class CreateCajeroTable extends Migration
             $table->string('nombre');
             $table->string('direccion');
             $table->date('fecha');
-
             $table->integer('idSucursal')->unsigned();
             $table->foreign('idSucursal')->references('id')->on('sucursales');
-
+            $table->integer('idUsuario')->unsigned();
+            $table->foreign('idUsuario')->references('id')->on('users');
             $table->timestamps();
         });
     }

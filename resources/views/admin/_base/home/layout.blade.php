@@ -2,7 +2,7 @@
 <html lang="es">
   <head>
       <meta charset="utf-8">
-      <title>Admin Simulacion</title>
+      <title>Proyecto Nuevo Amanecer</title>
       <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
       @include('admin._base.home.style')
   </head>

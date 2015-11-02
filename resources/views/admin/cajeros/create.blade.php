@@ -46,6 +46,29 @@
                 </div>
             </div>
 
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Datos de Acceso</h3>
+                </div>
+                <div class="panel-body">
+                  <div class="form-group">
+                      <label for="telefono" class="col-sm-2 control-label">Usuario</label>
+                      <div class="col-sm-10">
+                          {!! Form::text('email', null ,['class' => 'form-control', 'placeholder' => 'Usuario De Acceso', 'required']) !!}
+                      </div>
+                  </div>
+                  <div class="form-group">
+                      <label for="telefono" class="col-sm-2 control-label">Password</label>
+                      <div class="col-sm-10">
+                          {!! Form::text('password', null ,['class' => 'form-control', 'placeholder' => 'Password de Acceso', 'required']) !!}
+                      </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+
             <button type="submit" class="hide"></button>
         </div>
     {!! Form::close() !!}
