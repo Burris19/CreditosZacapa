@@ -11,6 +11,9 @@
       <a href="sucursales">
         <i class="glyphicon glyphicon-apple"></i> <span>Sucursales</span>
       </a>
+      <a href="cajeros">
+        <i class="glyphicon glyphicon-apple"></i> <span>Cajeros</span>
+      </a>
     </li>
   </ul>
 </section>
