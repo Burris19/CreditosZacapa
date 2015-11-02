@@ -27,6 +27,6 @@ class Sucursales extends Model
 
     public function cajero()
     {
-        return $this->hasMany('App\Repositories\Cajeros\Cajero','idSucursal','id');
+        return $this->hasMany('App\Repositories\Cajero\Cajero','idSucursal','id');
     }
 }
