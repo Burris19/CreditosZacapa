@@ -22,7 +22,7 @@ class Sucursales extends Model
 
     public function branch()
     {
-        return $this->hasOne('App\Repositories\Host\Host', 'id','idHost');
+        return $this->hasOne('App\Repositories\Branch\Branch', 'id','idBranch');
     }
 
     public function cajero()

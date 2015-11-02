@@ -35,7 +35,7 @@
                                 <td>{{ $sucursal->nombre }} </td>
                                 <td>{{ $sucursal->direccion }} </td>
                                 <td>{{ $sucursal->telefono }} </td>
-                                <td>{{ $sucursal->nombre }} </td>
+                                <td>{{ $sucursal->branch->nombre }} </td>
                                 <td><a href="#" data-url = "sucursales" data-id = "{{ $sucursal->id }}"  class="btn btn-info glyphicon glyphicon-th-list edit"></a></td>
                             </tr>
                         @endforeach
@@ -47,7 +47,7 @@
     </div>
 @endsection
 
-{{--@include('admin.clientes.create')--}}
+@include('admin.sucursales.create',compact('branch'))
 <div id="div-modal"></div>
 @section('other-scripts')
     {!! Html::script('plugins/datatables/jquery.dataTables.min.js') !!}
