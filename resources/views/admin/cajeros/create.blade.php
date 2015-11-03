@@ -60,7 +60,7 @@
                   <div class="form-group">
                       <label for="telefono" class="col-sm-2 control-label">Password</label>
                       <div class="col-sm-10">
-                          {!! Form::text('password', null ,['class' => 'form-control', 'placeholder' => 'Password de Acceso', 'required']) !!}
+                          {!! Form::password('password', null ,['class' => 'form-control', 'placeholder' => 'Password de Acceso', 'required']) !!}
                       </div>
                   </div>
                 </div>

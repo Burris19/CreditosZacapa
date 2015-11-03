@@ -13,16 +13,23 @@ class Cajero extends Model
         'nombre',
         'direccion',
         'fecha',
-        'idSucursal'
+        'idSucursal',
+        'idUsuario'
     ];
 
     public $relations = [
-        'sucursal'
+        'sucursal',
+        'users'
     ];
 
     public function sucursal()
     {
         return $this->hasOne('App\Repositories\Sucursales\Sucursales', 'id','idSucursal');
+    }
+
+    public function users()
+    {
+        return $this->hasOne('App\Repositories\User\User', 'id','idUsuario');
     }
 
 
