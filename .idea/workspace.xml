@@ -3,12 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="124c4906-4532-488c-addc-788aba9d9995" name="Default" comment="">
       <change type="MOVED" beforePath="C:\xampp\htdocs\CreditosZacapa\README.md" afterPath="$PROJECT_DIR$/readme.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Repositories/Cajero/Cajero.php" afterPath="$PROJECT_DIR$/app/Repositories/Cajero/Cajero.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/CajeroController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/CajeroController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Repositories/User/User.php" afterPath="$PROJECT_DIR$/app/Repositories/User/User.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/blade.xml" afterPath="$PROJECT_DIR$/.idea/blade.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/admin/cajeros/create.blade.php" afterPath="$PROJECT_DIR$/resources/views/admin/cajeros/create.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/admin/_base/home/sidebar.blade.php" afterPath="$PROJECT_DIR$/resources/views/admin/_base/home/sidebar.blade.php" />
     </list>
     <ignored path="zacapa.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,7 +24,18 @@
     <favorites_list name="zacapa" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="sidebar.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/admin/_base/home/sidebar.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.40963855">
+              <caret line="14" column="43" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -81,7 +87,6 @@
         <option value="$PROJECT_DIR$/app/Repositories/Creditos/Creditos.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/sucursal/list.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/routes.php" />
-        <option value="$PROJECT_DIR$/resources/views/admin/_base/home/sidebar.blade.php" />
         <option value="$PROJECT_DIR$/database/migrations/2015_10_31_235031_create_sucursales_table.php" />
         <option value="$PROJECT_DIR$/app/Repositories/Sucursales/SucursalRepo.php" />
         <option value="$PROJECT_DIR$/database/migrations/2015_11_01_041439_create_cajero_table.php" />
@@ -95,6 +100,7 @@
         <option value="$PROJECT_DIR$/app/Repositories/Cajero/Cajero.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/CajeroController.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/cajeros/create.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/_base/home/sidebar.blade.php" />
       </list>
     </option>
   </component>
@@ -471,7 +477,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="cajeros\c&#9;FILE&#9;file://C:/xampp/htdocs/CreditosZacapa/resources/views/admin/cajeros/create.blade.php&#10;createc&#9;FILE&#9;file://C:/xampp/htdocs/CreditosZacapa/database/migrations/2015_11_01_041439_create_cajero_table.php&#10;si&#9;FILE&#9;file://C:/xampp/htdocs/CreditosZacapa/resources/views/admin/_base/home/sidebar.blade.php&#10;admin&#9;FILE&#9;file:///home/julian/Code/zacapa/public/js/crudAdmin.js&#10;route&#9;FILE&#9;file:///home/julian/Code/zacapa/app/Http/routes.php&#10;sucu&#9;FILE&#9;file:///home/julian/Code/zacapa/app/Http/Controllers/Admin/SucursalesController.php&#10;su&#9;FILE&#9;file:///home/julian/Code/zacapa/app/Http/Controllers/Admin/SucursalesController.php&#10;suc&#9;FILE&#9;file:///home/julian/Code/zacapa/app/Http/Controllers/Admin/SucursalesController.php&#10;sucurs&#9;FILE&#9;file:///home/julian/Code/zacapa/app/Http/Controllers/Admin/SucursalesController.php&#10;rout&#9;FILE&#9;file:///home/julian/Code/zacapa/app/Http/routes.php&#10;side&#9;FILE&#9;file:///home/julian/Code/zacapa/resources/views/admin/_base/home/sidebar.blade.php&#10;clien&#9;FILE&#9;file:///home/julian/Code/zacapa/app/Http/Controllers/Admin/ClientesController.php&#10;crud&#9;FILE&#9;file:///home/julian/Code/zacapa/app/Http/Controllers/Admin/CRUDController.php&#10;clie&#9;FILE&#9;file:///home/julian/Code/zacapa/app/Http/Controllers/Admin/ClientesController.php&#10;ad&#9;FILE&#9;file:///home/julian/Code/zacapa/public/js/crudAdmin.js&#10;crudc&#9;FILE&#9;file:///home/julian/Code/zacapa/app/Http/Controllers/Admin/CRUDController.php&#10;rou&#9;FILE&#9;file:///home/julian/Code/zacapa/app/Http/routes.php&#10;CRUD&#9;FILE&#9;file:///home/julian/Code/zacapa/app/Http/Controllers/Admin/CRUDController.php&#10;bran&#9;FILE&#9;file:///home/julian/Code/zacapa/app/Http/Controllers/Admin/BranchController.php&#10;adm&#9;FILE&#9;file:///home/julian/Code/zacapa/public/js/crudAdmin.js&#10;ran&#9;FILE&#9;file:///home/julian/Code/zacapa/app/Http/Controllers/Admin/BranchController.php&#10;crudo&#9;FILE&#9;file:///home/julian/Code/zacapa/public/app/helpers/crud_operate.js&#10;cru&#9;FILE&#9;file:///home/julian/Code/zacapa/public/js/crudAdmin.js&#10;scr&#9;FILE&#9;file:///home/julian/Code/zacapa/resources/views/admin/_base/home/script.blade.php&#10;helper&#9;FILE&#9;file:///home/julian/Code/zacapa/public/app/helpers/helper.js&#10;sc&#9;FILE&#9;file:///home/julian/Code/zacapa/resources/views/admin/_base/home/script.blade.php&#10;scri&#9;FILE&#9;file:///home/julian/Code/zacapa/resources/views/admin/_base/home/script.blade.php&#10;contro&#9;FILE&#9;file:///home/julian/Code/zacapa/app/Http/Controllers/Admin/BranchController.php&#10;composer.js&#9;FILE&#9;file:///home/julian/Code/zacapa/composer.json&#10;routes&#9;FILE&#9;file:///home/julian/Code/zacapa/app/Http/routes.php" />
+    <property name="SearchEverywhereHistoryKey" value="s&#9;FILE&#9;file://C:/xampp/htdocs/CreditosZacapa/resources/views/admin/_base/home/sidebar.blade.php&#10;cajeros\c&#9;FILE&#9;file://C:/xampp/htdocs/CreditosZacapa/resources/views/admin/cajeros/create.blade.php&#10;createc&#9;FILE&#9;file://C:/xampp/htdocs/CreditosZacapa/database/migrations/2015_11_01_041439_create_cajero_table.php&#10;si&#9;FILE&#9;file://C:/xampp/htdocs/CreditosZacapa/resources/views/admin/_base/home/sidebar.blade.php&#10;admin&#9;FILE&#9;file:///home/julian/Code/zacapa/public/js/crudAdmin.js&#10;route&#9;FILE&#9;file:///home/julian/Code/zacapa/app/Http/routes.php&#10;sucu&#9;FILE&#9;file:///home/julian/Code/zacapa/app/Http/Controllers/Admin/SucursalesController.php&#10;su&#9;FILE&#9;file:///home/julian/Code/zacapa/app/Http/Controllers/Admin/SucursalesController.php&#10;suc&#9;FILE&#9;file:///home/julian/Code/zacapa/app/Http/Controllers/Admin/SucursalesController.php&#10;sucurs&#9;FILE&#9;file:///home/julian/Code/zacapa/app/Http/Controllers/Admin/SucursalesController.php&#10;rout&#9;FILE&#9;file:///home/julian/Code/zacapa/app/Http/routes.php&#10;side&#9;FILE&#9;file:///home/julian/Code/zacapa/resources/views/admin/_base/home/sidebar.blade.php&#10;clien&#9;FILE&#9;file:///home/julian/Code/zacapa/app/Http/Controllers/Admin/ClientesController.php&#10;crud&#9;FILE&#9;file:///home/julian/Code/zacapa/app/Http/Controllers/Admin/CRUDController.php&#10;clie&#9;FILE&#9;file:///home/julian/Code/zacapa/app/Http/Controllers/Admin/ClientesController.php&#10;ad&#9;FILE&#9;file:///home/julian/Code/zacapa/public/js/crudAdmin.js&#10;crudc&#9;FILE&#9;file:///home/julian/Code/zacapa/app/Http/Controllers/Admin/CRUDController.php&#10;rou&#9;FILE&#9;file:///home/julian/Code/zacapa/app/Http/routes.php&#10;CRUD&#9;FILE&#9;file:///home/julian/Code/zacapa/app/Http/Controllers/Admin/CRUDController.php&#10;bran&#9;FILE&#9;file:///home/julian/Code/zacapa/app/Http/Controllers/Admin/BranchController.php&#10;adm&#9;FILE&#9;file:///home/julian/Code/zacapa/public/js/crudAdmin.js&#10;ran&#9;FILE&#9;file:///home/julian/Code/zacapa/app/Http/Controllers/Admin/BranchController.php&#10;crudo&#9;FILE&#9;file:///home/julian/Code/zacapa/public/app/helpers/crud_operate.js&#10;cru&#9;FILE&#9;file:///home/julian/Code/zacapa/public/js/crudAdmin.js&#10;scr&#9;FILE&#9;file:///home/julian/Code/zacapa/resources/views/admin/_base/home/script.blade.php&#10;helper&#9;FILE&#9;file:///home/julian/Code/zacapa/public/app/helpers/helper.js&#10;sc&#9;FILE&#9;file:///home/julian/Code/zacapa/resources/views/admin/_base/home/script.blade.php&#10;scri&#9;FILE&#9;file:///home/julian/Code/zacapa/resources/views/admin/_base/home/script.blade.php&#10;contro&#9;FILE&#9;file:///home/julian/Code/zacapa/app/Http/Controllers/Admin/BranchController.php&#10;composer.js&#9;FILE&#9;file:///home/julian/Code/zacapa/composer.json&#10;routes&#9;FILE&#9;file:///home/julian/Code/zacapa/app/Http/routes.php" />
     <property name="FullScreen" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="full.screen.before.presentation.mode" value="false" />
@@ -525,11 +531,11 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27525622" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27525622" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -957,7 +963,7 @@
     <entry file="file://$PROJECT_DIR$/resources/views/admin/_base/home/sidebar.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.40963855">
-          <caret line="14" column="15" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
+          <caret line="14" column="43" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
           <folding />
         </state>
       </provider>
