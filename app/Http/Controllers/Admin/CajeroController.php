@@ -45,6 +45,7 @@ class CajeroController extends CRUDController
     public function store(Request $request)
     {
         $data = $request->all();
+        $dataUsers['type']='cajero';
         $dataUsers['name']=$data['nombre'];
         $dataUsers['email']=$data['email'];
         $dataUsers['password']=$data['password'];

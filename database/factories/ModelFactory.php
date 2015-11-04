@@ -17,7 +17,8 @@ $factory->define(App\Repositories\User\User::class, function (Faker\Generator $f
     return [
         'name' => 'admin',
         'email' => 'admin@gmail.com',
-        'password' => bcrypt('admin'),
+        'password' => 'admin',
+        'type' => 'admin',
         'remember_token' => str_random(10),
     ];
 });
