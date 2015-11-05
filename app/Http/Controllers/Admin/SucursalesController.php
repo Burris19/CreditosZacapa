@@ -12,6 +12,7 @@ use App\Repositories\Branch\BranchRepo;
 
 class SucursalesController extends CRUDController
 {
+
     protected $module = 'sucursales';
     protected $branchRepo = null;
 

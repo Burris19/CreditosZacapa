@@ -21,10 +21,12 @@
                         <thead>
                         <tr>
                             <th>#</th>
+                            <th>Codigo</th>
                             <th>Nombre</th>
                             <th>Direccion</th>
                             <th>Telefono</th>
                             <th>Branch</th>
+                            <th>Fecha</th>
                             <th></th>
                         </tr>
                         </thead>
@@ -32,9 +34,11 @@
                         @foreach($data as  $key => $sucursal)
                             <tr>
                                 <td>{{ $key + 1   }}</td>
+                                <td>{{ $sucursal->codigo }} </td>
                                 <td>{{ $sucursal->nombre }} </td>
                                 <td>{{ $sucursal->direccion }} </td>
                                 <td>{{ $sucursal->telefono }} </td>
+                                <td>{{ $sucursal->fecha }} </td>
                                 <td>{{ $sucursal->branch->nombre }} </td>
                                 <td><a href="#" data-url = "sucursales" data-id = "{{ $sucursal->id }}"  class="btn btn-info glyphicon glyphicon-th-list edit"></a></td>
                             </tr>

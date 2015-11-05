@@ -14,10 +14,8 @@ class CreateHostTable extends Migration
     {
         Schema::create('host', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('codigo');
             $table->string('nombre');
             $table->string('direccion');
-            $table->date('fechaActual');
             $table->timestamps();
         });
     }

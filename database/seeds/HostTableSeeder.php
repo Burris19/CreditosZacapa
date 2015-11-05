@@ -12,11 +12,6 @@ class HostTableSeeder extends Seeder
     public function run()
     {
 
-        factory(App\Repositories\Host\Host::class)->create([
-            'codigo' => 'A25',
-            'nombre' => 'Servidor Central',
-            'direccion' => 'Guatemala,Guatemala'
-
-        ]);
+        factory(App\Repositories\Host\Host::class)->create();
     }
 }

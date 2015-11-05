@@ -20,6 +20,6 @@
 @stop
 
 @section('modal-footer')
-    <button id="btn-delete" type="button" class="btn btn-effect-ripple btn-primary">Guardar</button>
+    <button id="btn-delete" type="button" class="btn btn-effect-ripple btn-primary">Eliminar</button>
     <button type="button" class="btn btn-effect-ripple btn-danger" data-dismiss="modal">Cancelar</button>
 @stop

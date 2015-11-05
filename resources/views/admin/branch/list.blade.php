@@ -21,6 +21,7 @@
                         <thead>
                         <tr>
                             <th>#</th>
+                            <th>Codigo</th>
                             <th>Nombre</th>
                             <th>Area</th>
                             <th>Fecha</th>
@@ -32,6 +33,7 @@
                           @foreach($data as  $key => $branch)
                             <tr>
                                 <td>{{ $key + 1   }}</td>
+                                <td>{{ $branch->codigo }} </td>
                                 <td>{{ $branch->nombre }} </td>
                                 <td>{{ $branch->area }} </td>
                                 <td>{{ $branch->fecha }} </td>

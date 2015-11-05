@@ -24,8 +24,6 @@
                             <th>#</th>
                             <th>Codigo</th>
                             <th>Nombre</th>
-                            <th>Direccion</th>
-                            <th>Fecha</th>
                             <th>Sucursal</th>
                             
                         </tr>
@@ -34,10 +32,8 @@
                           @foreach($data as  $key => $cajero)
                             <tr>
                                 <td>{{ $key + 1   }}</td>
-                                <td>{{ $cajero->code }} </td>
+                                <td>{{ $cajero->codigo }} </td>
                                 <td>{{ $cajero->nombre }} </td>
-                                <td>{{ $cajero->direccion }} </td>
-                                <td>{{ $cajero->fecha }} </td>
                                 <td>{{ $cajero->sucursal->nombre }} </td>
 
                             </tr>

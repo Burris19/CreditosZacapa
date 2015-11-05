@@ -10,9 +10,11 @@ class Sucursales extends Model
 
     protected $fillable = [
         'idBranch',
+        'codigo',
         'nombre',
         'direccion',
-        'telefono'
+        'telefono',
+        'fecha'
     ];
 
     public $relations = [

@@ -16,6 +16,12 @@
     {!! Form::open(['url' => 'branches','id'=>'form-create','method' => 'POST','class'=>'form-horizontal', 'data-url' => 'branches' ]) !!}
         <div class="box-body">
             <div class="form-group">
+                <label for="nombre" class="col-sm-2 control-label">Codigo</label>
+                <div class="col-sm-10">
+                    {!! Form::text('codigo',null,['class' => 'form-control', 'placeholder' => 'Codigo debe ser unico', 'required']) !!}
+                </div>
+            </div>
+            <div class="form-group">
                 <label for="nombre" class="col-sm-2 control-label">Nombre</label>
                 <div class="col-sm-10">
                     {!! Form::text('nombre',null,['class' => 'form-control', 'placeholder' => 'Nombre del branch', 'required']) !!}

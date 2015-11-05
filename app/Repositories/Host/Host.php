@@ -8,10 +8,8 @@ class Host extends Model
 {
     protected $table = 'host';
     protected $fillable = [
-        'codigo',
         'nombre',
-        'direccion',
-        'fechaActual'
+        'direccion'
     ];
 
 

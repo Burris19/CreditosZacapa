@@ -11,6 +11,7 @@ use App\Repositories\Branch\BranchRepo;
 class BranchController extends CRUDController
 {
     protected $rules = [
+        'codigo' => 'required|unique:branch',
         'nombre' => 'required',
         'area'   => 'required',
         'fecha'  => 'required|date'

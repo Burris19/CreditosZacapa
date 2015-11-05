@@ -16,6 +16,13 @@
     {!! Form::open(['url' => 'sucursales','id'=>'form-create','method' => 'POST','class'=>'form-horizontal', 'data-url' => 'sucursales' ]) !!}
         <div class="box-body">
             <div class="form-group">
+                <label for="nombre" class="col-sm-2 control-label">Codigo</label>
+                <div class="col-sm-10">
+                    {!! Form::text('codigo',null,['class' => 'form-control', 'placeholder' => 'Nombre de la Sucursal', 'required']) !!}
+                </div>
+            </div>
+
+            <div class="form-group">
                 <label for="nombre" class="col-sm-2 control-label">Nombre</label>
                 <div class="col-sm-10">
                     {!! Form::text('nombre',null,['class' => 'form-control', 'placeholder' => 'Nombre de la Sucursal', 'required']) !!}
@@ -37,6 +44,12 @@
                 <label for="Branch" class="col-sm-2 control-label">Branch</label>
                 <div class="col-sm-10">
                   {!! Form::select('idBranch', $branch, null , ['placeholder' => 'Seleccione un branch', 'class' => 'form-control']) !!}
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="fecha" class="col-sm-2 control-label">Fecha</label>
+                <div class="col-sm-10">
+                    {!! Form::date('fecha', \Carbon\Carbon::now() ,['class' => 'form-control', 'placeholder' => 'Con esta fecha iniciara el brach', 'required']) !!}
                 </div>
             </div>
 

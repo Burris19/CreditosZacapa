@@ -18,25 +18,13 @@
             <div class="form-group">
                 <label for="nombre" class="col-sm-2 control-label">Codigo</label>
                 <div class="col-sm-10">
-                    {!! Form::text('code',null,['class' => 'form-control', 'placeholder' => 'Codigo del Cajero', 'required']) !!}
+                    {!! Form::text('codigo',null,['class' => 'form-control', 'placeholder' => 'Codigo del Cajero', 'required']) !!}
                 </div>
             </div>
             <div class="form-group">
                 <label for="direccion" class="col-sm-2 control-label">Nombre</label>
                 <div class="col-sm-10">
                     {!! Form::text('nombre',null,['class' => 'form-control', 'placeholder' => 'Nombre del Cajero', 'required']) !!}
-                </div>
-            </div>
-            <div class="form-group">
-                <label for="telefono" class="col-sm-2 control-label">Direccion</label>
-                <div class="col-sm-10">
-                    {!! Form::text('direccion', null ,['class' => 'form-control', 'placeholder' => 'Direccion del Cajero', 'required']) !!}
-                </div>
-            </div>
-            <div class="form-group">
-                <label for="telefono" class="col-sm-2 control-label">Fecha</label>
-                <div class="col-sm-10">
-                    {!! Form::date('fecha', \Carbon\Carbon::now() ,['class' => 'form-control', 'placeholder' => 'Con esta fecha iniciara el Cajro', 'required']) !!}
                 </div>
             </div>
             <div class="form-group">
@@ -65,9 +53,6 @@
                   </div>
                 </div>
               </div>
-
-
-
 
             <button type="submit" class="hide"></button>
         </div>

@@ -9,12 +9,10 @@ class Cajero extends Model
     protected $table = 'cajeros';
 
     protected $fillable = [
-        'code',
+        'codigo',
         'nombre',
-        'direccion',
-        'fecha',
         'idSucursal',
-        'idUsuario'
+        'idUsuario',
     ];
 
     public $relations = [

@@ -14,12 +14,10 @@ use App\Repositories\User\UserRepo;
 class CajeroController extends CRUDController
 {
     protected $rules=[
-        'code'=>'required|unique:cajeros',
-        'nombre'=>'required',
-        'direccion'=>'required',
-        'fecha'=>'required',
-        'idSucursal'=>'required',
-        'idUsuario'=>'required',
+        'codigo' => 'required',
+        'nombre' => 'required',
+        'idSucursal' =>'required',
+        'idUsuario'  =>'required',
 
     ];
 

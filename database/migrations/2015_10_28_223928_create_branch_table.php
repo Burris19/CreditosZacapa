@@ -14,11 +14,14 @@ class CreateBranchTable extends Migration
     {
         Schema::create('branch', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('idHost')->unsigned();
-            $table->foreign('idHost')->references('id')->on('host');
+            $table->string('codigo');
             $table->string('nombre');
             $table->string('area');
             $table->date('fecha');
+
+            $table->integer('idHost')->unsigned();
+            $table->foreign('idHost')->references('id')->on('host');
+
             $table->timestamps();
         });
     }

@@ -1,7 +1,5 @@
 <?php
 
-use App\Repositories\Host\Host;
-
 /*
 |--------------------------------------------------------------------------
 | Model Factories
@@ -25,7 +23,6 @@ $factory->define(App\Repositories\User\User::class, function (Faker\Generator $f
 
 $factory->define(App\Repositories\Host\Host::class, function (Faker\Generator $faker) {
     return [
-        'codigo' => 'A25',
         'nombre' => 'Servidor Central',
         'direccion' => 'Guatemala,Guatemala'
     ];
@@ -33,23 +30,11 @@ $factory->define(App\Repositories\Host\Host::class, function (Faker\Generator $f
 
 $factory->define(App\Repositories\Branch\Branch::class, function (Faker\Generator $faker) {
     return [
-        'idHost' => App\Repositories\Host\Host::all()->random()->id,
-        'nombre' => $faker->name,
-        'area' => $faker->city,
-        'fecha' => $faker->date()
+        'codigo'    =>  'gu10',
+        'idHost'    =>  App\Repositories\Host\Host::all()->random()->id,
+        'nombre'    =>  'Guaemala',
+        'area'      =>  'Central',
+        'fecha'     =>   \Carbon\Carbon::now()
     ];
 });
 
-$factory->define(App\Repositories\Cliente\Cliente::class, function (Faker\Generator $faker) {
-    return [
-        'codigo' => $faker->code,
-        'dpi' => $faker->code,
-        'nit' => $faker->code,
-        'nombre' => $faker->name,
-        'apellido' => $faker->name,
-        'direccion' => $faker->city,
-        'telefono' => $faker->code,
-        'edad' => $faker->code,
-        'fecha' => $faker->date()
-    ];
-});
