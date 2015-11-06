@@ -2,34 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="124c4906-4532-488c-addc-788aba9d9995" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/database/seeds/ClientesTableSeeder.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/admin.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2015_10_28_223440_create_host_table.php" afterPath="$PROJECT_DIR$/database/migrations/2015_10_28_223440_create_host_table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2015_10_28_223928_create_branch_table.php" afterPath="$PROJECT_DIR$/database/migrations/2015_10_28_223928_create_branch_table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2015_10_30_165528_create_clientes_table.php" afterPath="$PROJECT_DIR$/database/migrations/2015_10_30_165528_create_clientes_table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2015_10_31_235031_create_sucursales_table.php" afterPath="$PROJECT_DIR$/database/migrations/2015_10_31_235031_create_sucursales_table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2015_11_01_041439_create_cajero_table.php" afterPath="$PROJECT_DIR$/database/migrations/2015_11_01_041439_create_cajero_table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Repositories/Branch/Branch.php" afterPath="$PROJECT_DIR$/app/Repositories/Branch/Branch.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/BranchController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/BranchController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seeds/BranchTableSeeder.php" afterPath="$PROJECT_DIR$/database/seeds/BranchTableSeeder.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Repositories/Cajero/Cajero.php" afterPath="$PROJECT_DIR$/app/Repositories/Cajero/Cajero.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/CajeroController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/CajeroController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Repositories/Clientes/Cliente.php" afterPath="$PROJECT_DIR$/app/Repositories/Clientes/Cliente.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Repositories/Host/Host.php" afterPath="$PROJECT_DIR$/app/Repositories/Host/Host.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seeds/HostTableSeeder.php" afterPath="$PROJECT_DIR$/database/seeds/HostTableSeeder.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/factories/ModelFactory.php" afterPath="$PROJECT_DIR$/database/factories/ModelFactory.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Repositories/Sucursales/Sucursales.php" afterPath="$PROJECT_DIR$/app/Repositories/Sucursales/Sucursales.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/SucursalesController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/SucursalesController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Repositories/User/User.php" afterPath="$PROJECT_DIR$/app/Repositories/User/User.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/ClientesController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/ClientesController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/blade.xml" afterPath="$PROJECT_DIR$/.idea/blade.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/admin/branch/create.blade.php" afterPath="$PROJECT_DIR$/resources/views/admin/branch/create.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/admin/cajeros/create.blade.php" afterPath="$PROJECT_DIR$/resources/views/admin/cajeros/create.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/admin/sucursales/create.blade.php" afterPath="$PROJECT_DIR$/resources/views/admin/sucursales/create.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/admin/branch/delete.blade.php" afterPath="$PROJECT_DIR$/resources/views/admin/branch/delete.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/admin/branch/edit.blade.php" afterPath="$PROJECT_DIR$/resources/views/admin/branch/edit.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/admin/branch/list.blade.php" afterPath="$PROJECT_DIR$/resources/views/admin/branch/list.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/admin/cajeros/list.blade.php" afterPath="$PROJECT_DIR$/resources/views/admin/cajeros/list.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/admin/sucursales/list.blade.php" afterPath="$PROJECT_DIR$/resources/views/admin/sucursales/list.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/admin/clientes/create.blade.php" afterPath="$PROJECT_DIR$/resources/views/admin/clientes/create.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="zacapa.iws" />
@@ -51,7 +26,18 @@
     <favorites_list name="zacapa" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="ClientesController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/ClientesController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.35904256">
+              <caret line="22" column="24" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -71,12 +57,10 @@
         <option value="$PROJECT_DIR$/app/Repositories/Creditos/CreditoRepo.php" />
         <option value="$PROJECT_DIR$/app/Repositories/Cuotas/CuotaRepo.php" />
         <option value="$PROJECT_DIR$/database/migrations/2015_10_31_165310_create_cuotas_table.php" />
-        <option value="$PROJECT_DIR$/resources/views/admin/clientes/create.blade.php" />
         <option value="$PROJECT_DIR$/public/js/crudAdmin.js" />
         <option value="$PROJECT_DIR$/resources/views/admin/clientes/edit.blade.php" />
         <option value="$PROJECT_DIR$/app/Repositories/Cuotas/Cuotas.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/clientes/list.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/ClientesController.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/clientes/showCuotas.blade.php" />
         <option value="$PROJECT_DIR$/database/migrations/2015_10_31_164848_create_creditos_table.php" />
         <option value="$PROJECT_DIR$/app/Repositories/Creditos/Creditos.php" />
@@ -99,7 +83,6 @@
         <option value="$PROJECT_DIR$/app/Repositories/Sucursales/Sucursales.php" />
         <option value="$PROJECT_DIR$/database/migrations/2015_11_01_041439_create_cajero_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2015_10_30_165528_create_clientes_table.php" />
-        <option value="$PROJECT_DIR$/app/Repositories/Clientes/Cliente.php" />
         <option value="$PROJECT_DIR$/database/migrations/2015_10_31_235031_create_sucursales_table.php" />
         <option value="$PROJECT_DIR$/database/seeds/HostTableSeeder.php" />
         <option value="$PROJECT_DIR$/database/seeds/BranchTableSeeder.php" />
@@ -117,6 +100,9 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/CajeroController.php" />
         <option value="$PROJECT_DIR$/app/Repositories/Cajero/Cajero.php" />
         <option value="$PROJECT_DIR$/app/Repositories/User/User.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/clientes/create.blade.php" />
+        <option value="$PROJECT_DIR$/app/Repositories/Clientes/Cliente.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/ClientesController.php" />
       </list>
     </option>
   </component>
@@ -137,9 +123,9 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="1599" />
-    <option name="width" value="1602" />
-    <option name="height" value="901" />
+    <option name="x" value="1600" />
+    <option name="width" value="800" />
+    <option name="height" value="900" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -164,6 +150,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -192,154 +179,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zacapa" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zacapa" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zacapa" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zacapa" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cajeros" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zacapa" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zacapa" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zacapa" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zacapa" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="database" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zacapa" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zacapa" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="database" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="migrations" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zacapa" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zacapa" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bootstrap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zacapa" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zacapa" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Repositories" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="User" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zacapa" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zacapa" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -366,7 +205,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Cajero" />
+              <option name="myItemId" value="Clientes" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -386,15 +225,14 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="cajero&#9;FILE&#9;file:///home/julian/Code/zacapa/app/Http/Controllers/Admin/CajeroController.php&#10;sucu&#9;null&#9;null&#10;bran&#9;null&#9;null&#10;cajer&#9;FILE&#9;file:///home/julian/Code/zacapa/app/Http/Controllers/Admin/CajeroController.php&#10;caje&#9;FILE&#9;file:///home/julian/Code/zacapa/app/Http/Controllers/Admin/CajeroController.php&#10;hea&#9;FILE&#9;file:///home/julian/Code/zacapa/resources/views/admin/_base/home/header.blade.php&#10;s&#9;FILE&#9;file://C:/xampp/htdocs/CreditosZacapa/resources/views/admin/_base/home/sidebar.blade.php&#10;cajeros\c&#9;FILE&#9;file://C:/xampp/htdocs/CreditosZacapa/resources/views/admin/cajeros/create.blade.php&#10;createc&#9;FILE&#9;file://C:/xampp/htdocs/CreditosZacapa/database/migrations/2015_11_01_041439_create_cajero_table.php&#10;si&#9;FILE&#9;file://C:/xampp/htdocs/CreditosZacapa/resources/views/admin/_base/home/sidebar.blade.php&#10;admin&#9;FILE&#9;file:///home/julian/Code/zacapa/public/js/crudAdmin.js&#10;route&#9;FILE&#9;file:///home/julian/Code/zacapa/app/Http/routes.php&#10;su&#9;FILE&#9;file:///home/julian/Code/zacapa/app/Http/Controllers/Admin/SucursalesController.php&#10;suc&#9;FILE&#9;file:///home/julian/Code/zacapa/app/Http/Controllers/Admin/SucursalesController.php&#10;sucurs&#9;FILE&#9;file:///home/julian/Code/zacapa/app/Http/Controllers/Admin/SucursalesController.php&#10;rout&#9;FILE&#9;file:///home/julian/Code/zacapa/app/Http/routes.php&#10;side&#9;FILE&#9;file:///home/julian/Code/zacapa/resources/views/admin/_base/home/sidebar.blade.php&#10;clien&#9;FILE&#9;file:///home/julian/Code/zacapa/app/Http/Controllers/Admin/ClientesController.php&#10;crud&#9;FILE&#9;file:///home/julian/Code/zacapa/app/Http/Controllers/Admin/CRUDController.php&#10;clie&#9;FILE&#9;file:///home/julian/Code/zacapa/app/Http/Controllers/Admin/ClientesController.php&#10;ad&#9;FILE&#9;file:///home/julian/Code/zacapa/public/js/crudAdmin.js&#10;crudc&#9;FILE&#9;file:///home/julian/Code/zacapa/app/Http/Controllers/Admin/CRUDController.php&#10;rou&#9;FILE&#9;file:///home/julian/Code/zacapa/app/Http/routes.php&#10;CRUD&#9;FILE&#9;file:///home/julian/Code/zacapa/app/Http/Controllers/Admin/CRUDController.php&#10;adm&#9;FILE&#9;file:///home/julian/Code/zacapa/public/js/crudAdmin.js&#10;ran&#9;FILE&#9;file:///home/julian/Code/zacapa/app/Http/Controllers/Admin/BranchController.php&#10;crudo&#9;FILE&#9;file:///home/julian/Code/zacapa/public/app/helpers/crud_operate.js&#10;cru&#9;FILE&#9;file:///home/julian/Code/zacapa/public/js/crudAdmin.js&#10;scr&#9;FILE&#9;file:///home/julian/Code/zacapa/resources/views/admin/_base/home/script.blade.php&#10;helper&#9;FILE&#9;file:///home/julian/Code/zacapa/public/app/helpers/helper.js&#10;sc&#9;FILE&#9;file:///home/julian/Code/zacapa/resources/views/admin/_base/home/script.blade.php&#10;scri&#9;FILE&#9;file:///home/julian/Code/zacapa/resources/views/admin/_base/home/script.blade.php&#10;contro&#9;FILE&#9;file:///home/julian/Code/zacapa/app/Http/Controllers/Admin/BranchController.php&#10;composer.js&#9;FILE&#9;file:///home/julian/Code/zacapa/composer.json&#10;routes&#9;FILE&#9;file:///home/julian/Code/zacapa/app/Http/routes.php" />
+    <property name="SearchEverywhereHistoryKey" value="clien&#9;FILE&#9;file:///home/julian/Code/zacapa/app/Http/Controllers/Admin/ClientesController.php&#10;cajero&#9;FILE&#9;file:///home/julian/Code/zacapa/app/Http/Controllers/Admin/CajeroController.php&#10;sucu&#9;null&#9;null&#10;bran&#9;null&#9;null&#10;cajer&#9;FILE&#9;file:///home/julian/Code/zacapa/app/Http/Controllers/Admin/CajeroController.php&#10;caje&#9;FILE&#9;file:///home/julian/Code/zacapa/app/Http/Controllers/Admin/CajeroController.php&#10;hea&#9;FILE&#9;file:///home/julian/Code/zacapa/resources/views/admin/_base/home/header.blade.php&#10;s&#9;FILE&#9;file://C:/xampp/htdocs/CreditosZacapa/resources/views/admin/_base/home/sidebar.blade.php&#10;cajeros\c&#9;FILE&#9;file://C:/xampp/htdocs/CreditosZacapa/resources/views/admin/cajeros/create.blade.php&#10;createc&#9;FILE&#9;file://C:/xampp/htdocs/CreditosZacapa/database/migrations/2015_11_01_041439_create_cajero_table.php&#10;si&#9;FILE&#9;file://C:/xampp/htdocs/CreditosZacapa/resources/views/admin/_base/home/sidebar.blade.php&#10;admin&#9;FILE&#9;file:///home/julian/Code/zacapa/public/js/crudAdmin.js&#10;route&#9;FILE&#9;file:///home/julian/Code/zacapa/app/Http/routes.php&#10;su&#9;FILE&#9;file:///home/julian/Code/zacapa/app/Http/Controllers/Admin/SucursalesController.php&#10;suc&#9;FILE&#9;file:///home/julian/Code/zacapa/app/Http/Controllers/Admin/SucursalesController.php&#10;sucurs&#9;FILE&#9;file:///home/julian/Code/zacapa/app/Http/Controllers/Admin/SucursalesController.php&#10;rout&#9;FILE&#9;file:///home/julian/Code/zacapa/app/Http/routes.php&#10;side&#9;FILE&#9;file:///home/julian/Code/zacapa/resources/views/admin/_base/home/sidebar.blade.php&#10;crud&#9;FILE&#9;file:///home/julian/Code/zacapa/app/Http/Controllers/Admin/CRUDController.php&#10;clie&#9;FILE&#9;file:///home/julian/Code/zacapa/app/Http/Controllers/Admin/ClientesController.php&#10;ad&#9;FILE&#9;file:///home/julian/Code/zacapa/public/js/crudAdmin.js&#10;crudc&#9;FILE&#9;file:///home/julian/Code/zacapa/app/Http/Controllers/Admin/CRUDController.php&#10;rou&#9;FILE&#9;file:///home/julian/Code/zacapa/app/Http/routes.php&#10;CRUD&#9;FILE&#9;file:///home/julian/Code/zacapa/app/Http/Controllers/Admin/CRUDController.php&#10;adm&#9;FILE&#9;file:///home/julian/Code/zacapa/public/js/crudAdmin.js&#10;ran&#9;FILE&#9;file:///home/julian/Code/zacapa/app/Http/Controllers/Admin/BranchController.php&#10;crudo&#9;FILE&#9;file:///home/julian/Code/zacapa/public/app/helpers/crud_operate.js&#10;cru&#9;FILE&#9;file:///home/julian/Code/zacapa/public/js/crudAdmin.js&#10;scr&#9;FILE&#9;file:///home/julian/Code/zacapa/resources/views/admin/_base/home/script.blade.php&#10;helper&#9;FILE&#9;file:///home/julian/Code/zacapa/public/app/helpers/helper.js&#10;sc&#9;FILE&#9;file:///home/julian/Code/zacapa/resources/views/admin/_base/home/script.blade.php&#10;scri&#9;FILE&#9;file:///home/julian/Code/zacapa/resources/views/admin/_base/home/script.blade.php&#10;contro&#9;FILE&#9;file:///home/julian/Code/zacapa/app/Http/Controllers/Admin/BranchController.php&#10;composer.js&#9;FILE&#9;file:///home/julian/Code/zacapa/composer.json&#10;routes&#9;FILE&#9;file:///home/julian/Code/zacapa/app/Http/routes.php" />
     <property name="FullScreen" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../cliente.zacapa" />
     <property name="full.screen.before.presentation.mode" value="false" />
     <property name="recentsLimit" value="5" />
   </component>
@@ -446,7 +284,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1599" y="0" width="1602" height="901" extended-state="6" />
+    <frame x="1600" y="0" width="800" height="900" extended-state="4" />
     <editor active="false" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -455,19 +293,19 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34210527" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32890856" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -488,13 +326,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/clientes/create.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.57261413">
-          <caret line="84" column="47" selection-start-line="84" selection-start-column="40" selection-end-line="84" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2015_10_31_165310_create_cuotas_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4938704">
@@ -584,13 +415,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/ClientesController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.6">
-          <caret line="37" column="29" selection-start-line="37" selection-start-column="29" selection-end-line="37" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.env.example">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -644,20 +468,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.45228216">
           <caret line="23" column="41" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2015_10_31_164848_create_creditos_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.44813278">
-          <caret line="19" column="54" selection-start-line="19" selection-start-column="54" selection-end-line="19" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Repositories/Clientes/Cliente.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.42323652">
-          <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -801,18 +611,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/cajeros/create.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.897281">
-          <caret line="33" column="22" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Repositories/Cajero/CajeroRepo.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -820,7 +622,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33466136">
           <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -828,7 +629,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.43824703">
           <caret line="29" column="7" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -836,7 +636,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4302789">
           <caret line="19" column="45" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="48" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -844,6 +643,47 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.09561753">
           <caret line="44" column="32" selection-start-line="44" selection-start-column="32" selection-end-line="44" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2015_10_31_164848_create_creditos_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.43085107">
+          <caret line="19" column="54" selection-start-line="19" selection-start-column="54" selection-end-line="19" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/cajeros/create.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2393617">
+          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#2854#0#Blade" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/clientes/create.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7898936">
+          <caret line="63" column="55" selection-start-line="63" selection-start-column="40" selection-end-line="63" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Repositories/Clientes/Cliente.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.43085107">
+          <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/ClientesController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.35904256">
+          <caret line="22" column="24" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
           <folding />
         </state>
       </provider>
