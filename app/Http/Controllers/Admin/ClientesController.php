@@ -66,7 +66,7 @@ class ClientesController extends CRUDController
                     $dataCuota['idCredito'] = $credit->id;
                     $dataCuota['montoCuota'] = $data['cuota'];
                     $dataCuota['fechaPago'] = $fechaPago->addMonth();
-                    $dataCuota['estado'] = 'activa';
+                    $dataCuota['estado'] = 'Activa';
                     $dataCuota['balance'] = $data['cuota'];
                     $this->cuotaRepo->create($dataCuota);
                 }
