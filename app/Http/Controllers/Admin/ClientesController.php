@@ -9,9 +9,10 @@ use App\Http\Controllers\Controller;
 use App\Repositories\Clientes\ClienteRepo;
 use App\Repositories\Creditos\CreditoRepo;
 use App\Repositories\Cuotas\CuotaRepo;
-use Carbon\Carbon;
+use App\Repositories\Branch\BranchRepo;
 use App\Repositories\Transaccion\TransaccionRepo;
-
+use App\Repositories\MovimientoLeer\MovimientosRepo;
+use Carbon\Carbon;
 
 class ClientesController extends CRUDController
 {
@@ -34,16 +35,22 @@ class ClientesController extends CRUDController
     protected $creditoRepo = null;
     protected $cuotaRepo = null;
     protected $transaccionRepo = null;
+    protected $movimientosRepo = null;
+    protected $branchRepo = null;
+
 
     function __construct(ClienteRepo $clientesRepo,
                          CreditoRepo $creditoRepo,
                          CuotaRepo $cuotaRepo,
-                         TransaccionRepo $transaccionRepo)
+                         TransaccionRepo $transaccionRepo,
+                         MovimientosRepo $movimientosRepo, BranchRepo $branchRepo)
     {
         $this->repo=$clientesRepo;
         $this->creditoRepo = $creditoRepo;
         $this->cuotaRepo = $cuotaRepo;
         $this->transaccionRepo = $transaccionRepo;
+        $this->movimientosRepo = $movimientosRepo;
+        $this->branchRepo = $branchRepo;
     }
 
     public function store(Request $request)
@@ -84,8 +91,19 @@ class ClientesController extends CRUDController
                 $transaction['idCredito'] = $credit->id;
                 $transaction['idTipoMoneda'] = 1;
 
-                $this->transaccionRepo->create($transaction);
+                $trans = $this->transaccionRepo->create($transaction);
 
+                $branch = $this->branchRepo->getAll();
+
+                foreach($branch as $key => $value)
+                {
+                    $movimiento['idBranch'] = $value->id;
+                    $movimiento['idCliente'] = $client->id;
+                    $movimiento['idCredito'] = $credit->id;
+                    $movimiento['saldo'] = $credit->saldo;
+                    $movimiento['idTransaccion'] = $trans->id ;
+                    $this->movimientosRepo->create($movimiento);
+                }
 
 
                 return compact('success','message','record','data');
