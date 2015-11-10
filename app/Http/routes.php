@@ -31,6 +31,7 @@ Route::group(['prefix' => '/', 'namespace' => 'Admin','middleware' => 'auth'], f
     Route::resource('clientes','ClientesController');
     Route::resource('sucursales','SucursalesController');
     Route::resource('cajeros','CajeroController');
+    Route::resource('transacciones','TransaccionesController');
 });
 
 Route::controllers([

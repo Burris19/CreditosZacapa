@@ -46,12 +46,6 @@
                   {!! Form::select('idBranch', $branch, null , ['placeholder' => 'Seleccione un branch', 'class' => 'form-control']) !!}
                 </div>
             </div>
-            <div class="form-group">
-                <label for="fecha" class="col-sm-2 control-label">Fecha</label>
-                <div class="col-sm-10">
-                    {!! Form::date('fecha', \Carbon\Carbon::now() ,['class' => 'form-control', 'placeholder' => 'Con esta fecha iniciara el brach', 'required']) !!}
-                </div>
-            </div>
 
             <button type="submit" class="hide"></button>
         </div>

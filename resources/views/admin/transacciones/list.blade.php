@@ -1,12 +1,9 @@
 @extends('admin._base.home.layout')
 @section('header')
     <h1>
-        Sucursales
+        Transacciones
         <small>listado</small>
     </h1>
-    <ol class="breadcrumb" style="">
-        <a href="#modal-create" class="btn btn-block btn-primary btn-sm create" data-toggle="modal">Crear Registro</a>
-    </ol>
 @endsection
 
 @section('content')
@@ -14,7 +11,7 @@
         <div class="col-xs-12">
             <div class="box">
                 <div class="box-header">
-                    <h3 class="box-title">Listado de Sucursales</h3>
+                    <h3 class="box-title">Listado de Transacciones</h3>
                 </div><!-- /.box-header -->
                 <div class="box-body">
                     <table id="example1" class="table table-bordered table-striped">
@@ -22,25 +19,24 @@
                         <tr>
                             <th>#</th>
                             <th>Codigo</th>
-                            <th>Nombre</th>
-                            <th>Direccion</th>
-                            <th>Telefono</th>
-                            <th>Branch</th>
+                            <th>Monto</th>
+                            <th>Estado</th>
+                            <th>Cliente</th>
+                            <th>Moneda</th>
                             <th>Fecha</th>
-                            <th></th>
+
                         </tr>
                         </thead>
                         <tbody>
-                        @foreach($data as  $key => $sucursal)
+                        @foreach($data as  $key => $value)
                             <tr>
                                 <td>{{ $key + 1   }}</td>
-                                <td>{{ $sucursal->codigo }} </td>
-                                <td>{{ $sucursal->nombre }} </td>
-                                <td>{{ $sucursal->direccion }} </td>
-                                <td>{{ $sucursal->telefono }} </td>
-                                <td>{{ $sucursal->branch->nombre }} </td>
-                                <td>{{ $sucursal->branch->fecha }} </td>
-                                <td><a href="#" data-url = "sucursales" data-id = "{{ $sucursal->id }}"  class="btn btn-info glyphicon glyphicon-th-list edit"></a></td>
+                                <td>{{ $value->code }} </td>
+                                <td>{{ $value->monto }} </td>
+                                <td>{{ $value->estado }} </td>
+                                <td>{{ $value['credito']['cliente']['codigo'] }}</td>
+                                <td>{{ $value['moneda']['descripcion'] }}</td>
+                                <td>{{ $value->created_at }} </td>
                             </tr>
                         @endforeach
                         </tbody>
@@ -50,8 +46,6 @@
         </div>
     </div>
 @endsection
-
-@include('admin.sucursales.create',compact('branch'))
 <div id="div-modal"></div>
 @section('other-scripts')
     {!! Html::script('plugins/datatables/jquery.dataTables.min.js') !!}
@@ -63,4 +57,5 @@
             $("#example1").DataTable();
         });
     </script>
+
 @endsection

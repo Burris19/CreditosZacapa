@@ -14,6 +14,9 @@
       <a href="cajeros">
         <i class="glyphicon glyphicon-tasks"></i> <span>Cajeros</span>
       </a>
+      <a href="transacciones">
+        <i class="glyphicon glyphicon-tasks"></i> <span>Transacciones</span>
+      </a>
     </li>
   </ul>
 </section>
