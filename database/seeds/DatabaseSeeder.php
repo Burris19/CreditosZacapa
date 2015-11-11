@@ -17,7 +17,7 @@ class DatabaseSeeder extends Seeder
         $this->call(UserTableSeeder::class);
         $this->call(HostTableSeeder::class);
         $this->call(BranchTableSeeder::class);
-
+        $this->call(TipoMonedaTableSeeder::class);
         Model::reguard();
     }
 }

@@ -38,3 +38,9 @@ $factory->define(App\Repositories\Branch\Branch::class, function (Faker\Generato
     ];
 });
 
+$factory->define(App\Repositories\TipoMoneda\TipoMoneda::class, function (Faker\Generator $faker) {
+    return [
+        'descripcion' => 'Quetzales',
+        'cantidad' => 1,
+    ];
+});

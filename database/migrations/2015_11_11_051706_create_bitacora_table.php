@@ -46,6 +46,7 @@ class CreateBitacoraTable extends Migration
             $table->string('estado_transaccion');
             $table->integer('id_credito');
             $table->integer('id_tipo_moneda');
+            $table->integer('id_cuota');
 
             $table->string('mensaje');
 
