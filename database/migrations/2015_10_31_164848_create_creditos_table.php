@@ -17,6 +17,7 @@ class CreateCreditosTable extends Migration
             $table->string('codigo');
             $table->decimal('saldo',8,2);
             $table->string('interes');
+            $table->integer('no_cuotas');
             $table->boolean('is_host')->default(true);
             $table->integer('idCliente')->unsigned();
             $table->foreign('idCliente')->references('id')->on('clientes');

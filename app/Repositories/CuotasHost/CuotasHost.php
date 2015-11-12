@@ -1,20 +1,22 @@
 <?php
 
-namespace App\Repositories\Cuotas;
+namespace App\Repositories\CuotasHost;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Cuotas extends Model
+class CuotasHost extends Model
 {
-    protected $table = 'cuotas';
+    protected $table = '';
 
     protected $fillable = [
-        'idCredito',
+        'id_clienteHost',
         'montoCuota',
         'fechaPago',
         'estado',
         'balance',
+        'id_host',
     ];
+
 
 
 }

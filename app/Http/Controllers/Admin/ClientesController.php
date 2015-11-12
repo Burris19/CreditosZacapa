@@ -59,6 +59,7 @@ class ClientesController extends CRUDController
         $dataCredit['codigo'] = $data['codigo'];
         $dataCredit['saldo'] = ( $data['cuota'] * $data['noCuotas'] );
         $dataCredit['interes'] = $data['interes'];
+        $dataCredit['no_cuotas'] = $data['noCuotas'];
         $validator = \Validator::make($data,$this->rules);
         $fechaPago = Carbon::now();
         $success = true;
@@ -132,3 +133,4 @@ class ClientesController extends CRUDController
 
     }
 }
+
