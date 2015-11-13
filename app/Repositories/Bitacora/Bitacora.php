@@ -38,6 +38,12 @@ class Bitacora extends Model
         'numero_cuotas_credito',
         'cuota_mensual_credito',
         'id_cuota',
+        'id_credito_branch',
+        'id_cuota_branch',
+        'idTransaccionMaster',
 
-    ];
+
+
+
+];
 }
