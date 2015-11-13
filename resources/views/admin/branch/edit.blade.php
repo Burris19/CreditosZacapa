@@ -18,7 +18,7 @@
         <div class="form-group">
             <label for="nombre" class="col-sm-2 control-label">Codigo</label>
             <div class="col-sm-10">
-                {!! Form::text('codigo', $data->codigo ,['class' => 'form-control', 'placeholder' => 'Nombre del branch', 'required']) !!}
+                {!! Form::text('codigo', $data->codigo ,['class' => 'form-control', 'placeholder' => 'Nombre del branch', 'required' , 'readonly'] ) !!}
             </div>
         </div>
         <div class="form-group">

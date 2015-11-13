@@ -22,23 +22,24 @@
                         <thead>
                         <tr>
                             <th>#</th>
+                            <th>Codigo</th>
+                            <th>Monto</th>
                             <th>Estado</th>
                             <th>Cliente</th>
-                            <th>Tipo Transaccion</th>
-                            <th>Monto</th>
-                            <th>Mensaje</th>
+                            <th>Moneda</th>
                             <th>Fecha</th>
+
                         </tr>
                         </thead>
                         <tbody>
                         @foreach($data as  $key => $value)
                             <tr>
                                 <td>{{ $key + 1   }}</td>
-                                <td>{{ $value->tipo }} </td>
-                                <td>{{ $value->nombre . ' ' . $value->apellido }} </td>
-                                <td>{{ $value->tipo_transaccion }} </td>
-                                <td>{{ $value->cantidad_credito }} </td>
-                                <td>{{ $value->mensaje }} </td>
+                                <td>{{ $value->code }} </td>
+                                <td>{{ $value->monto }} </td>
+                                <td>{{ $value->estado }} </td>
+                                <td>{{ $value['credito']['cliente']['codigo'] }}</td>
+                                <td>{{ $value['moneda']['descripcion'] }}</td>
                                 <td>{{ $value->created_at }} </td>
                             </tr>
                         @endforeach

@@ -49,7 +49,7 @@ class CajeroController extends CRUDController
         $dataUsers['password']=$data['password'];
         $validator= \Validator::make($dataUsers,$this->rulesUsuario);////Primero Verifico las Reglas del Usuario
         $success=true;
-        $messsage="Registro Guardado Exitosamente";
+        $message="Registro Guardado Exitosamente";
 
         if($validator->passes())
         {
