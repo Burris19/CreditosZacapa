@@ -17,6 +17,9 @@
       <a href="transacciones">
         <i class="glyphicon glyphicon-tasks"></i> <span>Transacciones</span>
       </a>
+      <a href="reporte">
+        <i class="fa fa-file-text-o"></i> <span>Reporte</span>
+      </a>
     </li>
   </ul>
 </section>
